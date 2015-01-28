@@ -13,7 +13,6 @@ import com.nightscout.core.model.GlucoseUnit;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.shadows.ShadowAlertDialog;
 import org.robolectric.util.ActivityController;
@@ -41,7 +40,6 @@ public class MainActivityTest extends RobolectricTestBase {
     public void setUp() {
         activityController = Robolectric.buildActivity(MainActivity.class);
         preferences = new AndroidPreferences(getContext());
-        MockitoAnnotations.initMocks(this);
     }
 
     @Test
